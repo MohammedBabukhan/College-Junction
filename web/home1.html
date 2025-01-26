@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* General body styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #FF6F00, #FF8F00); /* Orange gradient */
+            color: #FFFFFF; /* White text for contrast */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation bar styles */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        li a:hover {
+            background-color: #555;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        /* Centered logo */
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        /* Services Section */
+        #services {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .carousel-inner {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+
+        .carousel-inner .item {
+            background-color: #FF5722; /* Orange background for each slide */
+            color: white;
+            padding: 50px;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+
+        .carousel-indicators li {
+            background-color: #FF5722;
+        }
+
+        /* Search Box Styling */
+        .search-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .search-box {
+            width: 50%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .search-box input {
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF5722;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-box button:hover {
+            background-color: #FFC107; /* Golden hover effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Centered Logo -->
+    <section class="center-image">
+        <img src='cj_logo.jpg' height="300" width="80%" alt="Logo">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="text-center" style="margin-top: 30px;">Our Services</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <h3>College Search</h3>
+                        <p>Find the perfect college that fits your academic and personal goals.</p>
+                    </div>
+                    <div class="item">
+                        <h3>College Profiles</h3>
+                        <p>Explore detailed profiles of colleges to make informed decisions.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Comparison Tool</h3>
+                        <p>Easily compare multiple colleges based on various factors.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Personalized Recommendations</h3>
+                        <p>Get college recommendations tailored to your preferences and goals.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Entrance Exam Information</h3>
+                        <p>Stay updated with the latest entrance exam schedules and requirements.</p>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        </section>
+        <!-- Search Box -->
+        <section id="search">
+        <div class="search-container">
+            <h3>Search for Colleges</h3>
+            <div class="search-box">
+                <input type="text" placeholder="Enter college name or keyword" />
+                <button type="button">Search</button>
+            </div>
+        </div>
+            </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>Developers</h1>
+        <ul class="developer-list">
+            <li><a href="https://www.linkedin.com/in/mitesh-parmar-a45190258/">Mitesh Parmar</a></li>
+            <li><a href="https://www.linkedin.com/in/mohammed-babukhanwala-56b317258/">Mohammed Babukhanwala</a></li>
+        </ul>
+
+        <div class="spacer"></div>
+
+        <h1>Research And Documentation</h1>
+        <ul class="researcher-list">
+            <li><a href="https://www.linkedin.com/in/nikhil-dhavarya-8b5aa8330/">Nikhil Dhavarya</a></li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e, #fbc2eb, #a18cd1, #a18cd1);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+        /*        body {
+            margin: 0;
+            padding: 0;
+            
+
+            color: #FFFFFF;  White text for contrast 
+            font-family: 'Arial', sans-serif;
+        }*/
+
+        /* Navigation bar styles */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        li {
+            float: left;
+        }
+
+        .align {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        li a:hover {
+            background-color: white;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        /* Centered logo */
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        /* Section styling */
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #FFFFFF; /* Vibrant white for the new headings */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 10px #FF5722; /* Subtle glow effect */
+        }
+
+        /* Styling for developers and researchers list */
+        .developer-list, .researcher-list {
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1); /* Transparent white for background */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        .developer-list li, .researcher-list li {
+            padding: 10px;
+            font-size: 18px;
+            line-height: 1.6;
+            list-style-type: none; /* Remove bullet points */
+            margin-bottom: 10px;
+        }
+
+        .developer-list a, .researcher-list a {
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            background: #FFC107; /* Gold background for buttons */
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: block; /* Ensures the names are in a block format */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .developer-list a:hover, .researcher-list a:hover {
+            background-color: #FF5722; /* Deep orange background on hover */
+            color: #FFFFFF; /* Keep text white on hover */
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        /* Add space between sections */
+        .spacer {
+            margin-top: 30px;
+        }
+        .carousel-inner {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    .carousel-inner .item {
+/*      background-color: #FF5722;  Orange background for each slide */
+  background: #a18cd1;
+  
+      color: white;
+      padding: 50px;
+      font-size: 24px;
+      border-radius: 10px;
+    }
+    .carousel-indicators li {
+      background-color: #a18cd1;
+    }
+    .search-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .search-box {
+            width: 50%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: black;
+        }
+
+        .search-box input {
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF5722;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-box button:hover {
+            background-color: #FFC107; /* Golden hover effect */
+        }
+        button
+        {
+            color: black;
+        }
